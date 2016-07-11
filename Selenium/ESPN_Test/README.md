@@ -10,7 +10,7 @@ It includes testNG testing framework, Maven and Reportium.
 - Set your ESPN email and password (Register at www.espn.go.com).
 - Execute from [testng.xml file](https://github.com/PerfectoCode/Samples/blob/master/Selenium/ESPN_Test/testng.xml) as TestNG test.
 
-:information_source: To change the number of times the test will run, update the test anotation parameter `invocationCount` at [Test_Main.java file](https://github.com/PerfectoCode/Samples/blob/master/Selenium/ESPN_Test/src/test/java/Test_Main.java).
+:information_source: To change the number of times the test will run, update the test anotation parameter `invocationCount` in [Test_Main.java](https://github.com/PerfectoCode/Samples/blob/master/Selenium/ESPN_Test/src/test/java/Test_Main.java).
 
 ```java
 	
