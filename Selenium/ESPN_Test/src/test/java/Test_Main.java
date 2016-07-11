@@ -53,7 +53,7 @@ public class Test_Main {
         //Create Reportium client.
         reportiumClient = new ReportiumClientFactory().createPerfectoReportiumClient(
                         new PerfectoExecutionContext.PerfectoExecutionContextBuilder()
-                        .withProject(new Project("Sample Appium-Reportium" , "1.0"))
+                        .withProject(new Project("Sample Selenium-Reportium" , "1.0"))
                         .withContextTags("Regression") //Optional
                         .withWebDriver(driver) //Optional
                         .build());
