@@ -6,7 +6,8 @@ It includes testNG testing framework, Maven and Reportium.
 **TODO:**
 - Import the project to Eclipse or IntelliJ as a Maven project.
 - Set your Perfecto lab credentials and lab name in the [Test_Main.java file](https://github.com/PerfectoCode/Samples/blob/master/Selenium/ESPN_Test/src/test/java/Test_Main.java).
-- Set your device capabilities in the [testng.xml file](https://github.com/PerfectoCode/Samples/blob/master/Selenium/ESPN_Test/testng.xml). DO NOT CHANGE THE DEVICE LOCATION (The scenario is designed only for the ESPN global website:exclamation:).
+- Set your device capabilities in the [testng.xml file](https://github.com/PerfectoCode/Samples/blob/master/Selenium/ESPN_Test/testng.xml).<br/>
+    DO NOT CHANGE THE DEVICE LOCATION (The scenario is designed only for the ESPN global website:exclamation:).
 - Set your ESPN email and password (Register at www.espn.go.com).
 - Execute from [testng.xml file](https://github.com/PerfectoCode/Samples/blob/master/Selenium/ESPN_Test/testng.xml) as TestNG test.
 
