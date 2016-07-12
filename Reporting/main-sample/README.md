@@ -1,6 +1,6 @@
 # Before & After Reporting Tests
 
-These two Maven projects contain a simple test using the [Perfecto Community](https://play.google.com/store/apps/details?id=com.bloomfire.android.perfecto&hl=en) app.
+These two Maven projects contain a simple test using the Perfecto Community app.
 
 The Appium code sample includes: installing the Perfecto Community native app on an Android device (from the Lab repository), navigating within the app, closing and uninstalling the app.
 
