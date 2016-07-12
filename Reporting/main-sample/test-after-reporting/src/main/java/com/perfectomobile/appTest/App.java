@@ -3,11 +3,11 @@ package com.perfectomobile.appTest;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
+import java.awt.Desktop;
 import java.io.IOException;
+import java.net.URI;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-
-//import junit.framework.Assert;
 
 import org.eclipse.jetty.util.resource.ResourceFactory;
 import org.openqa.selenium.Platform;
@@ -26,7 +26,7 @@ import com.perfecto.reportium.test.TestContext;
 import com.perfecto.reportium.test.result.TestResultFactory;
 
 /**
- * Hello world!
+ * Community sample test including Perfecto Reporting
  *
  */
 public class App 
@@ -36,15 +36,23 @@ public class App
         
         System.out.println("Run started");
 
+        //TODO: Update credentials Lab & Community app
+        String labUser = "MyLabUser";
+        String labPassword = "MyLabPassword";
+        String communityUser = "MyCommunityUser";
+        String communityPassword = "MyCommunityPassword";
+        
         String browserName = "mobileOS";
         DesiredCapabilities capabilities = new DesiredCapabilities(browserName, "", Platform.ANY);
         //TODO: change your lab credentials
-        String host = "myLab.perfectomobile.com";
-        capabilities.setCapability("user", "myUser");
-        capabilities.setCapability("password", "myPassword");
+        //String host = "reporting-test.perfectomobile.com";
+        String host = "MyLab.perfectomobile.com";
+        capabilities.setCapability("user", labUser);
+        capabilities.setCapability("password", labPassword);
 
         //TODO: Change your device ID
-        capabilities.setCapability("deviceName", "6370E775");
+        capabilities.setCapability("deviceName", "MyDeviceID");
+        
 
         // Use the automationName capability to define the required framework - Appium (this is the default) or PerfectoMobile.
         capabilities.setCapability("automationName", "Appium");
@@ -53,7 +61,7 @@ public class App
         PerfectoLabUtils.setExecutionIdCapability(capabilities, host);
      
         // Script name
-        capabilities.setCapability("scriptName", "PerfectoCommunity");
+        capabilities.setCapability("scriptName", "Perfecto Community");
         
         // Install Perfecto app
         capabilities.setCapability("app", "PUBLIC:Android/android.perfecto.apk");
@@ -66,15 +74,19 @@ public class App
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         
         // Reporting client
+        // with generic tag "Android Native App Tests" (for example: user name, team name)
         PerfectoExecutionContext perfectoExecutionContext = new PerfectoExecutionContext.PerfectoExecutionContextBuilder()
         .withProject(new Project("Sample Reportium project", "1.0"))
-        .withContextTags("App name")
+        .withContextTags("AndroidNativeAppTests")
         .withWebDriver(driver)
         .build();
         ReportiumClient reportiumClient = new ReportiumClientFactory().createPerfectoReportiumClient(perfectoExecutionContext);
         
         try {
-            reportiumClient.testStart("This is my awesome test", new TestContext());
+        	
+        	//START TEST
+        	//with test "PerfectoCommunityAppLogIn" name and tag "ValidateLogIn"
+            reportiumClient.testStart("PerfectoCommunityAppLogIn", new TestContext("ValidateLogIn"));
         	
         	//step1: Validate login page
             reportiumClient.testStep("step1: Validate login page");
@@ -86,14 +98,15 @@ public class App
         	 }
             
             // Step2: Login to app
+        	reportiumClient.testStep("step2: Login to app");
         	 
-            //TODO: Change your Perfecto community credentials
-        	// Enter username
+        	// Enter community username        	 
         	AndroidElement email = (AndroidElement) driver.findElementByXPath("//*[@resource-id='com.bloomfire.android.perfecto:id/email_address']");
-     		email.sendKeys("myCommunityUser");
-     		// Enter password
+     		email.sendKeys(communityUser);
+     		// Enter community password
      		AndroidElement password = (AndroidElement) driver.findElementByXPath("//*[@resource-id='com.bloomfire.android.perfecto:id/password']");
-     		password.sendKeys("myCommunityPassword");            
+     		
+     		password.sendKeys(communityPassword);            
             // Click Done
      		AndroidElement Done = (AndroidElement) driver.findElementByName("Done");
     		Done.click();
@@ -106,6 +119,7 @@ public class App
 			}
             
             // Step3: Open profile and validate name
+     		reportiumClient.testStep("step3: Open profile and validate name");
             
             // Click menu icon
             driver.findElementByXPath("//*[@resource-id='android:id/action_bar_title']").click();           
@@ -117,6 +131,7 @@ public class App
             Assert.assertEquals("Profile", titleBarText);
                         
             // Step4: Logout and Uninstall app
+            reportiumClient.testStep("step4: Logout and Uninstall app");
             
             // Click More options icon
             driver.findElementByXPath("//*[@content-desc='More options']").click();
@@ -128,7 +143,9 @@ public class App
             // Uninstall the Perfecto app
             driver.removeApp("com.bloomfire.android.perfecto");            
 
+            //STOP TEST
             reportiumClient.testStop(TestResultFactory.createSuccess());
+            
         } catch (Exception e) {
             e.printStackTrace();
             reportiumClient.testStop(TestResultFactory.createFailure("Test stop failure.", e));
@@ -136,9 +153,14 @@ public class App
             try {
                 // Retrieve the URL of the Single Test Report, can be saved to your execution summary and used to download the report at a later point
                 //String reportURL = (String)(driver.getCapabilities().getCapability(WindTunnelUtils.SINGLE_TEST_REPORT_URL_CAPABILITY));
+               
+            	//Open default browser to Report Library
+                String reportURL = reportiumClient.getReportUrl();
+                System.out.println("Report URL - " + reportURL);
+                if (Desktop.isDesktopSupported()) {
+                	Desktop.getDesktop().browse(new URI(reportURL));
+                }
                 
-            	String reportURL = reportiumClient.getReportUrl();
-            	System.out.println("Report URL - " + reportURL);
                 driver.close();
 
                 // In case you want to download the report or the report attachments, do it here.
