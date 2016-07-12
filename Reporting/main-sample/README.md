@@ -11,3 +11,11 @@ Before running, make sure to:<br/>
 - update the Lab credentials in the test
 - register to the [Perfecto community](https://community.perfectomobile.com/)
 - update the community credentials in the test
+
+:information_source: This test is based on the Perfecto Community Android application.</br>
+The app is available in the Perfecto Lab repository using this path: `PUBLIC:Android/android.perfecto.apk`. The app is also available here for download. In case this app is not available in your Lab, you can upload it and update the file path accordingly.
+
+```java
+// Install Perfecto app
+capabilities.setCapability("app", "PUBLIC:Android/android.perfecto.apk");
+```
