@@ -5,4 +5,4 @@ Both text and image checkpoints are used, and imaged buttons are clicked.
 
 TO DO:
 Set your lab, user, and password.
-Upload the three .png files into the repository, and change path in test script to match the loaction you used.
+Upload the three .png files from "test images" directory into the repository, and change path in test script to match the loaction you used.
