@@ -95,6 +95,7 @@ public class Test_Main {
         }catch (Throwable t){
             t.printStackTrace();
             reportiumClient.testStop(TestResultFactory.createFailure(t.getMessage() , t));
+            Assert.fail(t.getMessage());
         }
 
     }
@@ -122,6 +123,7 @@ public class Test_Main {
         }catch (Throwable t){
             t.printStackTrace();
             reportiumClient.testStop(TestResultFactory.createFailure(t.getMessage() , t));
+            Assert.fail(t.getMessage());
         }
     }
 
