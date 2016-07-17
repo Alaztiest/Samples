@@ -1,5 +1,6 @@
 ##Fill Form Using Visual Analysis
 This code sample shows how to locate elements and insert text using Perfecto visual analysis.
+Note that this sample using images from Chrome Browser different browser may require a new images! 
 
 **TODO:**
 - Import the project to Eclipse or Intellij as Maven Project.
