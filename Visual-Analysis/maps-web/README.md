@@ -5,6 +5,6 @@ and driving diractions are requested, selecting the first route, for which the d
 Both text and image checkpoints are used, and imaged buttons are clicked.
 
 **TODO:** <br/>
-Set your lab, user, and password.
-Upload the three .png files from "test images" directory into the repository, and change path in test script to match the loaction you used.
-<br/>Perfecto Utils required for this test and can be found [here](https://github.com/PerfectoCode/Templates/tree/master/Utils).
+- Set your lab, user, and password.
+- Upload the three .png files from "test images" directory into the repository, and change path in test script to match the loaction you used.
+- Perfecto Utils required for this test and can be found [here](https://github.com/PerfectoCode/Templates/tree/master/Utils).
