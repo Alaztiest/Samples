@@ -6,9 +6,10 @@ import java.net.URL;
 
 public class driverCreator {
 
-    static String PERFECTO_USER = "daniela@perfectomobile.com";//"MY_USER";
-    static String PERFECTO_PASS = "Shelby1967";//"MY_PASS";
-    static String PERFECTO_HOST = "qatestlab.perfectomobile.com";//"MY_HOST.perfectomobile.com";
+	//TODO: Set your User, Password and Host for Perfecto Lab
+    static String PERFECTO_USER = "MY_USER";
+    static String PERFECTO_PASS = "MY_PASS";
+    static String PERFECTO_HOST = "MY_HOST.perfectomobile.com";
 
     public static RemoteWebDriver init_driver(String platformName, String platformVersion, String browserName, String browserVersion, String screenResolution) throws MalformedURLException {
 
