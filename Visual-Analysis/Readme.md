@@ -17,4 +17,4 @@ Perfecto can analyze the image looking for either text or images, with text bein
 •	Select - Clicks on the needle<br/>
 •	Find - Finds a needle for visual relations
 
-Quick how to https://community.perfectomobile.com/posts/961107 
+[Quick how to get started](https://community.perfectomobile.com/posts/961107)
