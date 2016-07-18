@@ -7,6 +7,7 @@ Note that this sample using images from Chrome Browser different browser may req
 - Import the project to Eclipse or Intellij as Maven Project.
 - Set your Perfecto lab User, Password and Cloud's Host at driverCreator.Java file.
 - Set your desktop device capabilities at testng.xml.
+- Set your mobile device id at mobileSessionMaps.java file.
 - Upload the test images (from VisualAnalysis Pics directory) to your repository.
 - Update the test images path at Perfecto_VisualAnalysis.java file.
 - Run the project as TestNG test via testng.xml file.
