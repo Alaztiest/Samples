@@ -8,6 +8,7 @@ Both text and image checkpoints are used, and imaged buttons are clicked.
 
 **TODO:** <br/>
 - Set your lab, user, and password.
-- Upload the three .png files from "test images" directory into the repository, and change path in test script to match the loaction you used.
+- Upload the three .png files from "test images" directory into the repository, and change path in test script to match the loaction you   used.
+- Set your mobile device id at mobileSessionMaps.java file.
 - Set you Goggle account credentials
 - Perfecto Utils are required for this test and can be found at https://github.com/PerfectoCode/Templates/tree/master/Utils.
