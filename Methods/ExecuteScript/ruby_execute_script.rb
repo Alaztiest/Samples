@@ -7,12 +7,12 @@ pass  = 'MY_PASS'
 url   = "http://" + host + "/nexperience/perfectomobile/wd/hub"
   
 capabilities  = {
-  :user       		 => user,
-  :password   		 => pass,
-  :platformName 	 => 'Windows',
-  :platformVersion => '8.1',
-  :browserName 	   => 'Chrome',
-  :browserVersion  => '50',
+  :user             => user,
+  :password   		  => pass,
+  :platformName 	  => 'Windows',
+  :platformVersion  => '8.1',
+  :browserName 	    => 'Chrome',
+  :browserVersion   => '50',
 }
 
 driver = Selenium::WebDriver.for(:remote, :url => url, :desired_capabilities => capabilities)
