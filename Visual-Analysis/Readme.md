@@ -9,8 +9,9 @@ Visual analysis is an alternative way of interacting with the device. Its source
 Perfecto can analyze the image looking for either text or images, with text being the recommended option. 
 
 **Main uses for visual analysis**<br/>
-1.	In cases where object analysis does not work <br/>
-2.	When there’s a need to validate what the user sees on a certain page
+1.	In cases where object analysis does not work<br/>
+2.	When there’s a need to validate what the user sees on a certain page<br/>
+3.	In cases where Selenium can't automate system level messages and popups
 
 **[Perfecto commands](https://community.perfectomobile.com/series/23047)**<br/>
 •	Checkpoint - Validates the needle appears on the screen<br/>
