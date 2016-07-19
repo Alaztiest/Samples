@@ -44,6 +44,11 @@ class TestClass(unittest.TestCase):
         self.driver.execute_script('document.getElementById("nav-link-yourAccount").click();')
         self.driver.execute_script('document.getElementById("createAccountSubmit").click();')
         self.driver.execute_script('document.getElementById("ap_customer_name").value = "Testing name";')
+        
+        #Asserts equals between name value and 'should be' value
+        form_val =  self.driver.execute_script('return document.getElementById("ap_customer_name").value;')
+        assert form_val == 'Testing name'
+        
         self.driver.execute_script('document.getElementById("ap_email").value = "Testing_mail@mailservice.com";')
         self.driver.execute_script('document.getElementById("ap_password").value = "passTest123";')
         self.driver.execute_script('document.getElementById("ap_password_check").value = "passTest123";')
