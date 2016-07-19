@@ -8,7 +8,7 @@ url   = "http://" + host + "/nexperience/perfectomobile/wd/hub"
   
 capabilities  = {
   :user             => user,
-  :password   		  => pass,
+  :password         => pass,
   :platformName 	  => 'Windows',
   :platformVersion  => '8.1',
   :browserName 	    => 'Chrome',
