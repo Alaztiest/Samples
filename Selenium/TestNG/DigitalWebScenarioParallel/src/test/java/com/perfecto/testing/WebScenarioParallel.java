@@ -63,9 +63,13 @@ public class WebScenarioParallel {
 		}
 		
 		try{
+			
 			driver.findElement(By.id("zip")).sendKeys("01434");
 			driver.findElement(By.id("submitButton")).click();
-	
+			
+			//Do you currently have GEICO auto insurance?
+			driver.findElement(By.xpath("//*[@class = 'radio'][2]")).click(); // Choose no radio button 
+			
 			driver.findElement(By.id("firstName")).sendKeys("MyFirstName");
 			driver.findElement(By.id("lastName")).sendKeys("MyFamilyName");
 			driver.findElement(By.id("street")).sendKeys("My Address");
