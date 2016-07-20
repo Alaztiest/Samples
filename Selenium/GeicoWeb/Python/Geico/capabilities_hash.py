@@ -42,10 +42,5 @@ capabilities_windows7_Firefox45 = {
 }
 
 
-"""
-Devices hash.
-Key     = 'Name of test case'.
-Value   = List [ PlatformName, device capabilities].
-"""
 devices = {'GalaxyS6-test':         ['Mobile' , capabilities_ios]
           }

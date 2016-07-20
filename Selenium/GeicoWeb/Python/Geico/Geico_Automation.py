@@ -36,13 +36,14 @@ class test():
             main_page.submit()
             
             #Customer information page.
+			custumer_info_page.set_CurrentlyHaveMutorInsurence('No')
             custumer_info_page = CustomerInformationPage(driver)
-            custumer_info_page.set_FirstName("Daniel")
-            custumer_info_page.set_LastName("Alfasi")
-            custumer_info_page.set_StreetAddress("Amal13")
+            custumer_info_page.set_FirstName("FirstName")
+            custumer_info_page.set_LastName("LastName")
+            custumer_info_page.set_StreetAddress("Street")
             custumer_info_page.set_APT("1234")
             custumer_info_page.set_ZIP("50840")
-            custumer_info_page.set_DateOfBirth('8','23','1992')
+            custumer_info_page.set_DateOfBirth('1','23','1990')
             custumer_info_page.set_HaveAutoInsurance('Yes')
             custumer_info_page.set_CurrentlyHaveMutorInsurence('No')
             custumer_info_page.submit()
@@ -81,9 +82,7 @@ if __name__ == '__main__':
         capabilities_hash.user = sys.argv[1]
         capabilities_hash.password = sys.argv[2]
         host = sys.argv[3]
-        #capabilities_hash.platform_name = sys.argv[3]
-        #capabilities_hash.description = sys.argv[4]
-
+		
     t = test(host)
     t.start_test()
     t.end_test()
