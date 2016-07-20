@@ -37,6 +37,7 @@ module Locators
   
   class CostumerInformationPage
   
+	$no_auto_insurance = {xpath: "//*[@class = 'radio'][2]"}
     $first_name               = {id: "firstName"}
     $last_name                = {id: "lastName"}
     $street_address           = {id: "street"}
@@ -57,6 +58,9 @@ module Locators
       @driver = driver
     end
 
+	def set_no_old_insurance()
+	  driver.find_element($no_auto_insurance).click
+	end
     def set_FirstName(first_name)
       driver.find_element($first_name).send_keys(first_name)
     end

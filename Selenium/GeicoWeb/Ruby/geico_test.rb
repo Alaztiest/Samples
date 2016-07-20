@@ -32,6 +32,7 @@ class Geico_test
     
     #Costumer Information Page
     costumer_info_page = CostumerInformationPage.new(driver)
+	costumer_info_page.set_no_old_insurance
     costumer_info_page.set_FirstName("MyName")
     costumer_info_page.set_LastName("MyLastName")
     costumer_info_page.set_StreetAdress("MyStreetAddress")
