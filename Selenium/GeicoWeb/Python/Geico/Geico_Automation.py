@@ -26,29 +26,29 @@ class test():
             
     """ The test itself , Geico scenario """
     def do_test(self , platform , driver):
-        try:
-            print 'Started test on: ' + platform + '.'
+		try:
+			print 'Started test on: ' + platform + '.'
             #working on the main page.
-            main_page = MainPage(driver)
+			main_page = MainPage(driver)
             #assert main_page.is_title_match() , "Main page's title not match! "
-            main_page.choose_insurance()
-            main_page.set_zip("1234")
-            main_page.submit()
+			main_page.choose_insurance()
+			main_page.set_zip("1234")
+			main_page.submit()
             
             #Customer information page.
+			custumer_info_page = CustomerInformationPage(driver)
 			custumer_info_page.set_CurrentlyHaveMutorInsurence('No')
-            custumer_info_page = CustomerInformationPage(driver)
-            custumer_info_page.set_FirstName("FirstName")
-            custumer_info_page.set_LastName("LastName")
-            custumer_info_page.set_StreetAddress("Street")
-            custumer_info_page.set_APT("1234")
-            custumer_info_page.set_ZIP("50840")
-            custumer_info_page.set_DateOfBirth('1','23','1990')
-            custumer_info_page.set_HaveAutoInsurance('Yes')
-            custumer_info_page.set_CurrentlyHaveMutorInsurence('No')
-            custumer_info_page.submit()
-        except Exception as e:
-            print e
+			custumer_info_page.set_FirstName("FirstName")
+			custumer_info_page.set_LastName("LastName")
+			custumer_info_page.set_StreetAddress("Street")
+			custumer_info_page.set_APT("1234")
+			custumer_info_page.set_ZIP("50840")
+			custumer_info_page.set_DateOfBirth('1','23','1990')
+			custumer_info_page.set_HaveAutoInsurance('Yes')
+			custumer_info_page.set_CurrentlyHaveMutorInsurence('No')
+			custumer_info_page.submit()
+		except Exception as e:
+			print e
 
     """End test  , Here you could download the test report """
     def end_test(self):
