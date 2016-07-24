@@ -1,7 +1,7 @@
 // An example configuration file.
 
 exports.config = {
-	//Remote address																						   
+//Remote address																						   
 	seleniumAddress: 'https://MY_HOST.perfectomobile.com/nexperience/perfectomobile/wd/hub',
 
   	//Capabilities to be passed to the webdriver instance.
