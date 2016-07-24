@@ -1,5 +1,7 @@
+//Create webdriver
 var webdriverio = require('webdriverio');
 var options = {
+		//Perfecto lab user and device capabilities
         desiredCapabilities: {
              platformName: 'ANDROID',                       
              browserName: 'mobileOS',                                             
@@ -12,6 +14,7 @@ var options = {
 port:80 
 };
  
+ //Init driver, gets url and navigate
 webdriverio
     .remote(options)
     .init()
