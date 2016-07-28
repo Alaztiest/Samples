@@ -8,6 +8,7 @@ Detailed instructions on running the examples can be found by framework:
 - [TestNG sample](testng-sample)
 - [JUnit sample](junit-sample)
 - [Main sample](main-sample)
+- [Protractor + Jasmine sample](protractor-sample/jasmine)
 
 # Running locally during test authoring
 Test authoring phase is performed using a local FirefoxDriver instance. During this phase the reporting client outputs its messages to the command line.
