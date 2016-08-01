@@ -1,7 +1,7 @@
 ## Selenium Code Samples Using Python
 
-This code samples shows how to use Python and Unittest testing framework in order to write tests.
-Python is easy to learn and has a readable syntax and recommended to writing your tests with. 
+These code samples show how to use Python and Unittest testing frameworks in order to write tests.
+Python is easy to learn, has a readable syntax, and is recommended for writing your tests. 
 
 **Downloads:**
 - Download selenium using pip install or easy_install: 
