@@ -1,6 +1,6 @@
 ## Selenium WebDriver Samples Using Ruby
 
-This code samples shows how to create Selenium tests using ruby programming language.
+These code samples show how to create Selenium tests using ruby programming language.
 
 **Download:**
 - Selenium download [here](http://www.seleniumhq.org/download/) - Choose Ruby. 
