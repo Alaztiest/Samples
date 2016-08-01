@@ -1,6 +1,6 @@
 ## Selenium webdriver samples using C# 
 
-These code samples shows how to use Selenium webdriver using C# and Nunit testing framework.<br/>
+These code samples show how to use Selenium webdriver using C# and Nunit testing framework.<br/>
 Perfecto has a rich support for Selenium API in C# and Visual Studio IDE. 
 
 **Downloads:**
