@@ -1,8 +1,8 @@
 ## Selenium WebDriver Code Samples Using Java
 
-This samples shows how to build tests with Selenium using Java.
-The samples uses testing framework such as TestNG and Unit Test and dependencies managers such as Maven and Gradle.
-Perfecto supplies greate support for Intellij and Eclipse Java IDEs.
+These samples show how to build tests with Selenium using Java.
+The samples use testing frameworks such as TestNG and Unit Test and dependencies managers such as Maven and Gradle.
+Perfecto supplies wide support for Intellij and Eclipse Java IDEs.
 
 **Downloads:**
 - Selenium Jar files can be found [here](http://www.seleniumhq.org/download/) .
