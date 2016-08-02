@@ -14,7 +14,7 @@ The following examples are included:
 |Selenium | Selenium WebDriver code samples for Desktop and Mobile |[Selenium series at Perfecto community](https://community.perfectomobile.com/series/20208-selenium-remotewebdriver-rwd) |
 |Visual-Analysis | Perfecto Visual Analysis - a unique Perfecto functionality for Desktop and Mobile |[Visual Analysis for Desktop at Perfecto Community](https://community.perfectomobile.com/posts/1138832-visual-analysis-enhances-desktop-web-testing) |
 |Wind Tunnel | Perfecto Wind Tunnel - brings real end-users to the CQ Lab by simulating real end-user scenarios. |[Perfecto Community series about Wind Tunnel](https://community.perfectomobile.com/series/24692-complete-wind-tunnel-guide) |
-
+|Windows10 | Perfecto support Microsoft WinAppDriver | [Testing Windows 10 with Perfecto](https://community.perfectomobile.com/posts/1199190-windows-10-testing-on-surface-pro)
 
 
 
