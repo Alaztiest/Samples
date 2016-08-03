@@ -12,13 +12,13 @@ import java.net.URL;
 public class Utils {
 
     //TODO: Set your Perfecto lab user, pass and host name
-    static String Perfecto_User = System.getProperty("np.testHost", "MY_USER");
-    static String Perfecto_Pass = System.getProperty("np.testHost", "MY_PASS");
+    static String Perfecto_User = System.getProperty("np.testUser", "MY_USER");
+    static String Perfecto_Pass = System.getProperty("np.testPass", "MY_PASS");
     static String Perfecto_Host = System.getProperty("np.testHost", "MY_HOST.perfectomobile.com");
 
-	//TODO: Add the path of the application in your Perfecto repository
-    static String Application_Path = System.getProperty("np.testHost", "PRIVATE:Reddit The Official App_v1.5.3_apkpure.com.apk");
-
+    static String Application_Path = System.getProperty("np.testApp", "PRIVATE:Reddit The Official App_v1.5.3_apkpure.com.apk");
+    static String AppUser = System.getProperty("np.AppUser", "My_user");
+    static String AppPass = System.getProperty("np.AppPass", "My_pass");
 
     /**
      * Receives device capabilities from the test main class and initialize Appium driver.

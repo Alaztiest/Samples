@@ -31,7 +31,7 @@ public class Reddit {
 
         //TODO: add your Reddit user and password
         System.out.println("Login app");
-        LogIn login = new LogIn(driver, "RedditUSER", "RedditPASS"); //Taking care of the login page
+        LogIn login = new LogIn(driver, Utils.AppUser, Utils.AppPass); //Taking care of the login page
 
         //Navigate to search and searching for a given text
         System.out.println("Navigate to search view and searching text");
