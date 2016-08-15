@@ -1,4 +1,4 @@
-# Before & After Reporting Tests
+# Main Sample - Before & After Reporting
 
 These two Maven projects contain a simple test using the Perfecto Community app.
 
