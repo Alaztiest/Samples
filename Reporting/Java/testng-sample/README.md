@@ -5,11 +5,9 @@ It includes 2 sub modules which personify different use cases:
 
 1. Adopt Reporting with minimal changes to the code base, not changing any test script.
 This type of user will gain seamless breakdown into tests by atuomatic reporting of _test start_ and _test end_.
+This use case is implemented in the _testng_listener_only_ project.
 2. Full usage of Reporting API, including update of test scripts to report functional test steps.
-
-The first use case is implemented in the _testng_listener_only_ project.
-
-The second use case is implemented in the _testng_full_ project.
+This use case is implemented in the _testng_full_ project.
 
 ## Using all reporting capabilities
 Demonstrated by _testng-full_ project.
