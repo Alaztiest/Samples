@@ -3,6 +3,8 @@
 
 # Internal tests not to publish
 InternalTests/
+packages/
+.dll
 
 # User-specific files
 *.suo
