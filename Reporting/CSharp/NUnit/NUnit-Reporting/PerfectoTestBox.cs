@@ -20,9 +20,9 @@ namespace ReportingTests.NUnit
     class PerfectoTestBox
     {
         //Perfecto lab username, password and host.
-        private const string PERFECTO_USER = "daniela@perfectomobile.com";
-        private const string PERFECTO_PASS = "Shelby1967";
-        private const string PERFECTO_HOST = "demo.perfectomobile.com";
+        private const string PERFECTO_USER = "myUser";
+        private const string PERFECTO_PASS = "myPassword";
+        private const string PERFECTO_HOST = "myLab.perfectomobile.com";
 
         internal static RemoteWebDriverExtended driver;
         internal static ReportiumClient reportiumClient;
