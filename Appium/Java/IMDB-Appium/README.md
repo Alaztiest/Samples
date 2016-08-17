@@ -1,5 +1,7 @@
 #IMDb Application code sample.
 
+:information_source: This test requires the IMDb application, which can be found [here]().
+
 **TODO:**
 - To use this code sample, make sure that the IMDb application is already installed on the device before running the test.
 - Change you device name and platformName at testng.xml file.
