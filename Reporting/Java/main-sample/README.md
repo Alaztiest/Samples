@@ -1,6 +1,6 @@
 # Main Sample - Before & After Reporting
 
-These two Maven projects contain a simple test using the Perfecto Community app.
+:information_source: This test requires the IMDb application, which can be found [here](https://github.com/PerfectoCode/AppsForSamples/tree/master/IMDb).
 
 The Appium code sample includes: installing the Perfecto Community native app on an Android device (from the Lab repository), navigating within the app, closing and uninstalling the app.
 
