@@ -139,7 +139,7 @@ public class App {
             //STOP TEST
             reportiumClient.testStop(TestResultFactory.createSuccess());
 
-        } catch (Exception e) {
+        } catch (Exception | AssertionError e) {
             e.printStackTrace();
             reportiumClient.testStop(TestResultFactory.createFailure("Test stop failure.", e));
         } finally {
