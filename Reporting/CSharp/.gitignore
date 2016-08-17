@@ -4,6 +4,7 @@
 # Internal tests not to publish
 InternalTests/
 packages/
+TestResults/
 .dll
 
 # User-specific files
