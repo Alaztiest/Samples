@@ -1,6 +1,6 @@
 ## NUnit
 
-This project demonstrates adding reportium client using [Reporting SDK for C#](https://www.nuget.org/packages/Perfecto-Reporting) to your UnitTesting tests.
+This project demonstrates adding reportium client using [Reporting SDK for C#](https://www.nuget.org/packages/Perfecto-Reporting) to your NUnit tests.
 
 To demonstrate Perfecto Reporting functionality, this project contatins two tests, one that will result in *success* and another in *failure*.
 
